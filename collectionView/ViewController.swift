@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         if let layout = collectionView.collectionViewLayout as? MyLayout {
             self.layout = layout
-            layout.numberOfColumns = 4
+            layout.numberOfColumns = 3
              self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, layout.cellPadding)
             layout.delegate = self
         }
@@ -45,6 +45,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.cellIdentifier, forIndexPath: indexPath) as! MyCell
         cell.imageView.image = self.images[indexPath.item]
+        cell.label.text = "\(indexPath.item + 1)"
         return cell
     }
 }

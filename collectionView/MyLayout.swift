@@ -29,7 +29,7 @@ class MyLayout: UICollectionViewLayout {
     }
     
     override func collectionViewContentSize() -> CGSize {
-        return CGSizeMake(0, self.contentHeight)
+        return CGSizeMake(0, self.contentHeight + cellPadding)
     }
     
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

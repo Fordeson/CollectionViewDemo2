@@ -32,18 +32,32 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JnR-u7-tZ1">
                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V9-T0-Gjd">
+                                                    <rect key="frame" x="0.0" y="37.5" width="80" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="X4l-Fs-Gf0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="JnR-u7-tZ1" secondAttribute="trailing" id="DAh-Ml-b22"/>
                                             <constraint firstItem="JnR-u7-tZ1" firstAttribute="top" secondItem="CAF-46-jCg" secondAttribute="top" id="ONs-Wl-cUv"/>
+                                            <constraint firstAttribute="trailing" secondItem="4V9-T0-Gjd" secondAttribute="trailing" id="TVu-ye-p1x"/>
+                                            <constraint firstItem="4V9-T0-Gjd" firstAttribute="leading" secondItem="CAF-46-jCg" secondAttribute="leading" id="V7C-hz-94h"/>
                                             <constraint firstAttribute="bottom" secondItem="JnR-u7-tZ1" secondAttribute="bottom" id="VNW-UL-qvO"/>
+                                            <constraint firstItem="4V9-T0-Gjd" firstAttribute="centerY" secondItem="CAF-46-jCg" secondAttribute="centerY" id="eKb-qp-nEY"/>
                                             <constraint firstItem="JnR-u7-tZ1" firstAttribute="leading" secondItem="CAF-46-jCg" secondAttribute="leading" id="fcG-1J-oHu"/>
+                                            <constraint firstItem="4V9-T0-Gjd" firstAttribute="centerX" secondItem="CAF-46-jCg" secondAttribute="centerX" id="mB3-FS-eNX"/>
                                         </constraints>
                                         <size key="customSize" width="80" height="120"/>
                                         <connections>
                                             <outlet property="imageView" destination="JnR-u7-tZ1" id="YgR-Ra-J15"/>
+                                            <outlet property="label" destination="4V9-T0-Gjd" id="Yt7-NP-CQJ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
